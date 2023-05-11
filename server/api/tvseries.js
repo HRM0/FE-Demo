@@ -5,7 +5,7 @@ const router = express.Router()
 //we need to get a reference to the relevant table
 const {TvShows} = require("../db")
 
-//GET route --> /tvshows/
+//GET route --> /api/tvshows/
 //this route returns all tvshows
 router.get('/', async (req, res, next) => {
     //remember async await means you want to try catch
