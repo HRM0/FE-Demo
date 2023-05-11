@@ -2,6 +2,8 @@ import React from "react";
 import {Routes, Route, Link} from "react-router-dom"
 import HomePage from "./HomePage";
 import AllShows from "./AllShows";
+import SingleShow from "./SingleShow";
+
 
 const App = () => {
 
@@ -15,6 +17,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/allshows" element={<AllShows />} />
+                    <Route path="/allshows/:id" element={<SingleShow />} />
                 </Routes>
             </div>
         </div>
